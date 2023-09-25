@@ -28,7 +28,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <>
       <div className="py-10 px-10 md:px-20 lg:px-40 flex justify-between text-gray-800 dark:text-slate-400 bg-white dark:bg-gray-900">
-        <h1 className="text-xl font-burtons">alexnguyen</h1>
+        <Link href="/" className="cursor-pointer">
+          {" "}
+          <h1 className="text-xl font-burtons">alexnguyen</h1>
+        </Link>
+
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -83,7 +87,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           }
         >
           <div className="mb-12 flex items-center justify-between dark:text-white">
-            <h1 className="text-xl font-burtons">alexnguyen</h1>
+            <Link href="/" className="cursor-pointer">
+              {" "}
+              <h1 className="text-xl font-burtons">alexnguyen</h1>
+            </Link>
             <div
               onClick={handleNav}
               className="rounded-full shadow-lg shadown-gray-400 p-3 cursor-pointer"
