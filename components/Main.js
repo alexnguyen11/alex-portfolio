@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsPhone } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
   return (
@@ -28,12 +28,11 @@ const Main = () => {
       <div className="flex justify-center gap-4 md:gap-16 py-3 text-gray-600 dark:text-gray-400">
         <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
           <a
-            href="https://github.com/alexnguyen11"
+            href="https://www.linkedin.com/in/alex-nguyen-ba80a622b/"
             target="_blank"
             rel="noreferrer"
           >
-            {" "}
-            <FaGithub />
+            <FaLinkedinIn />
           </a>
         </div>
         <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
