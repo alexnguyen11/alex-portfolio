@@ -12,7 +12,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-slate-800 text-slate-400  tracking-wide 
+    @apply  text-gray-800 dark:text-slate-400 tracking-wide 
   }
 
   h1,
@@ -21,7 +21,7 @@ html {
   h4,
   h5,
   h6 {
-    @apply font-bold text-white }
+    @apply font-bold text-black dark:text-white }
 
   h1 {
     @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
@@ -31,11 +31,20 @@ html {
     @apply text-3xl sm:text-4xl
   }
 
+  p {
+    @apply text-gray-800 dark:text-gray-200
+  }
+
   li {
     @apply cursor-pointer
   }
 
   button {
-    @apply shadow-xl shadow-gray-900 rounded-xl uppercase bg-[#00ba7cc4] text-white font-bold
+    @apply shadow-xl dark:shadow-gray-950 shadow-gray-300 rounded-xl uppercase bg-[#00ba7cc4] text-white font-bold
+  }
+
+  @font-face {
+    font-family: "burtons";
+    src: url("../public/Burtons.otf");
   }
 }

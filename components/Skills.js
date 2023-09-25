@@ -17,7 +17,7 @@ const Skills = () => {
   return (
     <div id="skills" className="py-10">
       <div className="mx-auto flex flex-col justify-center">
-        <p className="text-xl tracking-widest uppercase text-[#00ba7cc4]">
+        <p className="text-xl tracking-widest uppercase text-[#176d51c4] dark:text-[#00ba7cc4]">
           Skills
         </p>
         <h2 className="py-4 dark:text-white">What I Can Do</h2>

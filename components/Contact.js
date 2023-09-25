@@ -1,7 +1,7 @@
 import Image from "next/image";
 import contactImg from "../public/assets/contact.jpeg";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsPersonLinesFill, BsPhone } from "react-icons/bs";
+import { BsPhone } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
@@ -10,7 +10,7 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <div id="contact" className="py-10">
-      <p className="text-xl tracking-widest uppercase text-[#00ba7cc4]">
+      <p className="text-xl tracking-widest uppercase text-[#176d51c4] dark:text-[#00ba7cc4]">
         Contact
       </p>
       <h2 className="py-4">Get In Touch</h2>
@@ -36,7 +36,7 @@ const Contact = () => {
               </div>
               <div className="m-4">
                 <p className="uppercase pt-8">Connect With Me</p>
-                <div className="flex gap-10 items-center justify-between md:justify-center md:text-xl py-4">
+                <div className="flex gap-10 items-center justify-between md:justify-center md:text-xl py-4 text-gray-600 dark:text-gray-400">
                   <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <a
                       href="https://www.linkedin.com/in/alex-nguyen-ba80a622b/"

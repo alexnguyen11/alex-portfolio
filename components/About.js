@@ -6,8 +6,8 @@ const About = () => {
   return (
     <div id="about" className="py-10">
       <div className="m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2 dark:text-white">
-          <p className="uppercase text-xl tracking-widest text-[#00ba7cc4]">
+        <div className="col-span-2 ">
+          <p className="uppercase text-xl tracking-widest text-[#176d51c4] dark:text-[#00ba7cc4]">
             About
           </p>
           <h2 className="py-4">Who I am</h2>

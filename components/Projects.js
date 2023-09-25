@@ -1,12 +1,12 @@
 import barbershopImg from "@/public/assets/projects/barbershop.png";
-import portfolioImg from "../public/assets/projects/portfolio.png";
+import massageImg from "@/public/assets/projects/massagetherapy.png"
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
     <div id="projects" className="w-full py-16">
       <div className="max-w-[1240px] mx-auto px-2 ">
-        <p className="text-xl tracking-widest uppercase text-[#00ba7cc4]">
+        <p className="text-xl tracking-widest uppercase text-[#176d51c4] dark:text-[#00ba7cc4]">
           Projects
         </p>
         <h2 className="py-4">What I've Built</h2>
@@ -18,10 +18,10 @@ const Projects = () => {
             technolog="Next JS"
           />
           <ProjectItem
-            title="Portfolio"
-            backgroundImg={portfolioImg}
-            projectUrl="/portfolio-tailwinds"
-            technolog="Tailwinds"
+            title="Wellness Centre"
+            backgroundImg={massageImg}
+            projectUrl="/project/wellnesscentre"
+            technolog="Tailwind"
           />
         </div>
       </div>
