@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import barbershopImg from "@/public/assets/projects/barbershop.png";
 import { RiRadioButtonFill } from "react-icons/ri";
+import { PiCaretDoubleLeftBold } from "react-icons/pi";
 import Link from "next/link";
 
 const barbershop = () => {
@@ -16,7 +17,7 @@ const barbershop = () => {
           src={barbershopImg}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2">
+        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 px-10 ">
           <h2 className="py-2 text-white ">Barber Shop</h2>
           <h3 className="text-white ">NextJS / BootStrap / MongoDB</h3>
         </div>
@@ -37,18 +38,18 @@ const barbershop = () => {
             customers in the barber shop.
           </p>
           <a
-            href="https://taichicentre.vercel.app"
+            href="https://github.com/alexnguyen11"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4 mr-8 ">Code</button>
+            <button className="px-8 py-2 mt-4 mr-8 md:mt-[4rem]">Code</button>
           </a>
           <a
             href="https://next-barbershop.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4">Demo</button>
+            <button className="px-8 py-2 mt-4 md:mt-[4rem]">Demo</button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl dark:shadow-gray-950 shadow-gray-300 rounded-xl py-4">
@@ -79,9 +80,13 @@ const barbershop = () => {
             </div>
           </div>
         </div>
-        <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
-        </Link>
+        <div className="flex justify-center md:-translate-x-20">
+          <Link href="/#projects">
+            <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+              <PiCaretDoubleLeftBold className="text-[#00ba7cc4]" size={27} />
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );

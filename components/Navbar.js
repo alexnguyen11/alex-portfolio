@@ -4,25 +4,13 @@ import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsPhone } from "react-icons/bs";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import Alex_Nguyen_Resume from "@/public/Alex_Nguyen_Resume.pdf";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
-  };
-
-  const handleDownload = () => {
-    // Construct the URL to your PDF file
-    const resumePath = "/resume/Alex_Nguyen_Resume.pdf";
-
-    // Create a temporary anchor element to trigger the download
-    const link = document.createElement("a");
-    link.href = resumePath;
-    link.target = "_blank";
-    link.download = "C";
-    link.click();
   };
 
   return (
@@ -36,23 +24,23 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppcase hover:border-b">Home</li>
+              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">Home</li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppcase hover:border-b">About</li>
+              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">About</li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppcase hover:border-b">Skills</li>
+              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">Skills</li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppcase hover:border-b">Project</li>
+              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">Project</li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppcase hover:border-b">Contact</li>
+              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">Contact</li>
             </Link>
           </ul>
         </div>
-        <ul className="flex items-center">
+        <ul className="hidden md:flex items-center">
           <li>
             <BsFillMoonStarsFill
               className="cursor-pointer text-2xl"
@@ -62,7 +50,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <li>
             <a
               className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-              href="#"
+              href={Alex_Nguyen_Resume}
+              download="Alex_Nguyen_Resume"
             >
               Resume
             </a>
@@ -106,19 +95,19 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <div className="py-4 flex flex-col ">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4 text-sm">Home</li>
+                <li className="py-4 text-sm cursor-pointer">Home</li>
               </Link>
               <Link href="/#about">
-                <li className="py-4 text-sm">About</li>
+                <li className="py-4 text-sm cursor-pointer">About</li>
               </Link>
               <Link href="/#skills">
-                <li className="py-4 text-sm">Skills</li>
+                <li className="py-4 text-sm cursor-pointer">Skills</li>
               </Link>
               <Link href="/#projects">
-                <li className="py-4 text-sm">Projects</li>
+                <li className="py-4 text-sm cursor-pointer">Projects</li>
               </Link>
               <Link href="/#contact">
-                <li className="py-4 text-sm">Contact</li>
+                <li className="py-4 text-sm cursor-pointer">Contact</li>
               </Link>
             </ul>
             <div className="my-[4rem]">
@@ -164,7 +153,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 />
               </li>
               <li>
-                <a className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ">
+                <a
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md "
+                  href={Alex_Nguyen_Resume}
+                  download="Alex_Nguyen_Resume"
+                >
                   Resume
                 </a>
               </li>
