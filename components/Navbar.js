@@ -2,8 +2,7 @@ import React from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsPhone } from "react-icons/bs";
+import { ArrowDownward, Close, ArrowCircleDown } from "@mui/icons-material";
 import Link from "next/link";
 import Alex_Nguyen_Resume from "@/public/Alex_Nguyen_Resume.pdf";
 
@@ -24,19 +23,29 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">Home</li>
+              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">
+                Home
+              </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">About</li>
+              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">
+                About
+              </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">Skills</li>
+              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">
+                Skills
+              </li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">Project</li>
+              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">
+                Project
+              </li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">Contact</li>
+              <li className="ml-10 text-sm uppcase hover:border-b cursor-pointer">
+                Contact
+              </li>
             </Link>
           </ul>
         </div>
@@ -54,6 +63,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               download="Alex_Nguyen_Resume"
             >
               Resume
+
+              <ArrowCircleDown className="text-medium ml-1" />
             </a>
           </li>
         </ul>
@@ -80,11 +91,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               {" "}
               <h1 className="text-xl font-burtons">alexnguyen</h1>
             </Link>
-            <div
-              onClick={handleNav}
-              className="rounded-full shadow-lg shadown-gray-400 p-3 cursor-pointer"
-            >
-              <AiOutlineClose size={35} />
+            <div onClick={handleNav} className="cursor-pointer">
+              <Close />
             </div>
           </div>
           <div className="border-b border-gray-300 my-4">
@@ -111,20 +119,21 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               </Link>
             </ul>
 
-            <ul className="flex flex-row-reverse items-center justify-between gap-[5.5rem] absolute bottom-0 left-0 px-10 py-4">
+            <ul className="flex flex-row-reverse items-center justify-between">
               <li>
                 <BsFillMoonStarsFill
-                  className="cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl absolute bottom-5"
                   onClick={() => setDarkMode(!darkMode)}
                 />
               </li>
-              <li>
+              <li className="">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md "
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-2 py-1 border-none rounded-md text-sm absolute bottom-5"
                   href={Alex_Nguyen_Resume}
                   download="Alex_Nguyen_Resume"
                 >
-                  Resume
+                  CV
+                  <ArrowCircleDown className="text-base ml-1" />
                 </a>
               </li>
             </ul>

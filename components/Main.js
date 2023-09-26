@@ -1,12 +1,10 @@
 import Link from "next/link";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsPhone } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { GitHub, LinkedIn } from "@mui/icons-material";
 
 const Main = () => {
   return (
     <div id="main">
-      <div className="text-center p-10 py-10">
+      <div className="text-center md:p-10 py-10">
         <h1 className="py-6 text-teal-600 dark:text-teal-400 font-medium  ">
           Alex Nguyen
         </h1>
@@ -25,35 +23,25 @@ const Main = () => {
         </p>
       </div>
 
-      <div className="flex justify-center gap-4 md:gap-16 py-3 text-gray-600 dark:text-gray-400">
-        <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+      <div className="flex justify-center gap-4 md:gap-7 py-3 text-gray-600 dark:text-gray-400">
+        <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-3 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300">
           <a
             href="https://www.linkedin.com/in/alex-nguyen-ba80a622b/"
             target="_blank"
             rel="noreferrer"
           >
-            <FaLinkedinIn />
+            <LinkedIn />
           </a>
         </div>
-        <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+        <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-3  md:p-6 cursor-pointer hover:scale-110 ease-in duration-300">
           <a
             href="https://github.com/alexnguyen11"
             target="_blank"
             rel="noreferrer"
           >
             {" "}
-            <FaGithub />
+            <GitHub />
           </a>
-        </div>
-        <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-          <Link href="mailto:alex.khanh.nguyen@outlook.com">
-            <AiOutlineMail />
-          </Link>
-        </div>
-        <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-          <Link href="tel:4035605899">
-            <BsPhone />
-          </Link>
         </div>
       </div>
     </div>

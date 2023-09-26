@@ -19,7 +19,7 @@ const barbershop = () => {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 px-10 ">
           <h2 className="py-2 text-white ">Barber Shop</h2>
-          <h3 className="text-white ">NextJS / BootStrap / MongoDB</h3>
+          <h3 className="text-white ">NextJS / Material UI / MongoDB</h3>
         </div>
       </div>
 
@@ -55,7 +55,7 @@ const barbershop = () => {
         <div className="col-span-4 md:col-span-1 shadow-xl dark:shadow-gray-950 shadow-gray-300 rounded-xl py-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
-            <div className="grid grid-cols-2 md:grid-cols-1">
+            <div className="grid grid-cols-2 md:grid-cols-1 text-sm md:text-base">
               <p className=" py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> JavaScript
               </p>
@@ -66,7 +66,7 @@ const barbershop = () => {
                 <RiRadioButtonFill className="pr-1" /> NextJS
               </p>
               <p className=" py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
+                <RiRadioButtonFill className="pr-1" /> Material UI
               </p>
               <p className="py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Redux

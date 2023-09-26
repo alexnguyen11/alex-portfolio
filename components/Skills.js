@@ -27,8 +27,8 @@ const Skills = () => {
         </p>
         <h2 className="py-4 dark:text-white">What I Can Do</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="rounded-xl shadow-xl dark:shadow-gray-950 p-4 flex flex-col">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-[0.6rem] md:text-base">
+          <div className="rounded-xl shadow-none dark:shadow-xl dark:shadow-gray-950 p-4 flex flex-col bg-slate-50 dark:bg-gray-900">
             <h2 className="justify-center items-center text-center my-4 p-4 font-medium text-gray-600">
               Frontend Development
             </h2>
@@ -95,7 +95,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="rounded-xl  shadow-xl dark:shadow-gray-950 p-4 flex flex-col">
+          <div className="rounded-xl shadow-none dark:shadow-xl dark:shadow-gray-950 p-4 flex flex-col bg-slate-50 dark:bg-gray-900">
             <h2 className="justify-center items-center text-center my-4 p-4  font-medium text-gray-600">
               Backend Development
             </h2>
@@ -144,7 +144,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="rounded-xl shadow-xl dark:shadow-gray-950 p-4 flex flex-col">
+          <div className="rounded-xl shadow-none dark:shadow-xl dark:shadow-gray-950 p-4 flex flex-col bg-slate-50 dark:bg-gray-900">
             <h2 className="justify-center items-center text-center my-4 p-4  font-medium text-gray-600">
               Database
             </h2>
@@ -168,7 +168,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div className="rounded-xl shadow-xl dark:shadow-gray-950 p-4 flex flex-col">
+          <div className="rounded-xl shadow-none dark:shadow-xl dark:shadow-gray-950 p-4 flex flex-col bg-slate-50 dark:bg-gray-900">
             <h2 className="justify-center items-center text-center my-4 p-4  font-medium text-gray-600">
               Tools
             </h2>

@@ -1,9 +1,8 @@
 import Image from "next/image";
 import contactImg from "../public/assets/contact.jpeg";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsPhone } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsDiscord } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import { LinkedIn, AlternateEmail, PhoneIphone } from "@mui/icons-material";
 
 import Link from "next/link";
 
@@ -36,34 +35,34 @@ const Contact = () => {
               </div>
               <div className="md:m-4">
                 <p className="uppercase pt-8">Connect With Me</p>
-                <div className="flex justify-center gap-4 md:gap-16 py-3 text-gray-600 dark:text-gray-400">
-                  <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <div className="flex items-center gap-10 md:gap-10 py-5 text-gray-600 dark:text-gray-400  ">
+                  <div className="md:rounded-full md:shadow-lg md:dark:shadow-gray-950 md:shadow-gray-300 md:p-6  cursor-pointer hover:scale-110 ease-in duration-300">
                     <a
                       href="https://www.linkedin.com/in/alex-nguyen-ba80a622b/"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <FaLinkedinIn />
+                      <LinkedIn />
                     </a>
                   </div>
-                  <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <div className="md:rounded-full md:shadow-lg md:dark:shadow-gray-950 md:shadow-gray-300 md:p-6  cursor-pointer hover:scale-110 ease-in duration-300">
                     <a
-                      href="https://github.com/alexnguyen11"
+                      href="discordapp.com/users/867137784371216435"
                       target="_blank"
                       rel="noreferrer"
                     >
                       {" "}
-                      <FaGithub />
+                      <BsDiscord size={25} />
                     </a>
                   </div>
-                  <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <div className=" md:rounded-full md:shadow-lg md:dark:shadow-gray-950 md:shadow-gray-300 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <Link href="mailto:alex.khanh.nguyen@outlook.com">
-                      <AiOutlineMail />
+                      <AlternateEmail />
                     </Link>
                   </div>
-                  <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <div className="md:rounded-full md:shadow-lg md:dark:shadow-gray-950 md:shadow-gray-300 md:p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <Link href="tel:4035605899">
-                      <BsPhone />
+                      <PhoneIphone />
                     </Link>
                   </div>
                 </div>
