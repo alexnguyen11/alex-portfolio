@@ -55,7 +55,7 @@ const barbershop = () => {
         <div className="col-span-4 md:col-span-1 shadow-xl dark:shadow-gray-950 shadow-gray-300 rounded-xl py-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
-            <div className="grid grid-cols-3 md:grid-cols-1">
+            <div className="grid grid-cols-2 md:grid-cols-1">
               <p className=" py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> JavaScript
               </p>

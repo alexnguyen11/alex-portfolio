@@ -88,7 +88,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </div>
           </div>
           <div className="border-b border-gray-300 my-4">
-            <p className="w-[85%] md:w-[90%] py-4">
+            <p className="w-[85%] md:w-[90%] py-4 uppercase text-[0.6rem] tracking-widest">
               Connecting Ideas, Transforming Technology
             </p>
           </div>
@@ -111,7 +111,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               </Link>
             </ul>
 
-            <ul className="flex flex-row-reverse items-center justify-between mt-10">
+            <ul className="flex flex-row-reverse items-center justify-between gap-[5.5rem] absolute bottom-0 left-0 px-10 py-4">
               <li>
                 <BsFillMoonStarsFill
                   className="cursor-pointer text-2xl"

@@ -32,34 +32,34 @@ const Skills = () => {
             <h2 className="justify-center items-center text-center my-4 p-4 font-medium text-gray-600">
               Frontend Development
             </h2>
-            <div className="grid grid-cols-2 ml-5">
+            <div className="grid grid-cols-2 md:ml-5">
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={Html} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={Html} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>HTML</h3>
                 </div>
               </div>
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={Javascript} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={Javascript} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>JavaScript</h3>
                 </div>
               </div>
               <div className="flex flex-row gap-4  items-center my-4">
-                <div className="">
-                  <Image src={Css} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={Css} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>CSS</h3>
                 </div>
               </div>
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={ReactImg} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={ReactImg} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>React JS</h3>
@@ -67,8 +67,8 @@ const Skills = () => {
               </div>
 
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={NextJS} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={NextJS} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>Next JS</h3>
@@ -76,8 +76,8 @@ const Skills = () => {
               </div>
 
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={Tailwind} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={Tailwind} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>Tailwind CSS</h3>
@@ -85,8 +85,8 @@ const Skills = () => {
               </div>
 
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={MUI} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={MUI} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>Material UI</h3>
@@ -99,34 +99,34 @@ const Skills = () => {
             <h2 className="justify-center items-center text-center my-4 p-4  font-medium text-gray-600">
               Backend Development
             </h2>
-            <div className="grid grid-cols-2 ml-5">
+            <div className="grid grid-cols-2 md:ml-5">
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={NodeJS} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={NodeJS} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>Node JS</h3>
                 </div>
               </div>
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={Javascript} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={Javascript} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>Express JS</h3>
                 </div>
               </div>
               <div className="flex flex-row gap-4  items-center my-4">
-                <div className="">
-                  <Image src={Java} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={Java} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>Java</h3>
                 </div>
               </div>
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={SpringBoot} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={SpringBoot} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>SpringBoot</h3>
@@ -134,8 +134,8 @@ const Skills = () => {
               </div>
 
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={JWT} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={JWT} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>Json Web Token</h3>
@@ -148,18 +148,18 @@ const Skills = () => {
             <h2 className="justify-center items-center text-center my-4 p-4  font-medium text-gray-600">
               Database
             </h2>
-            <div className="grid grid-cols-2 ml-5">
+            <div className="grid grid-cols-2 md:ml-5">
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={MongoDB} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={MongoDB} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>MongoDB</h3>
                 </div>
               </div>
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={Oracle} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={Oracle} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>Oracle</h3>
@@ -172,34 +172,34 @@ const Skills = () => {
             <h2 className="justify-center items-center text-center my-4 p-4  font-medium text-gray-600">
               Tools
             </h2>
-            <div className="grid grid-cols-2 ml-5">
+            <div className="grid grid-cols-2 md:ml-5">
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={Git} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={Git} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>Git</h3>
                 </div>
               </div>
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={ChatGPT} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={ChatGPT} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>ChatGPT</h3>
                 </div>
               </div>
               <div className="flex flex-row gap-4  items-center my-4">
-                <div className="">
-                  <Image src={AdobeXD} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={AdobeXD} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>Adobe XD</h3>
                 </div>
               </div>
               <div className="flex flex-row gap-4 items-center my-4">
-                <div className="">
-                  <Image src={Figma} width="40" height="40" alt="/" />
+                <div className="md:w-10 md:h-10 w-7 h-7">
+                  <Image src={Figma} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <h3>Figma</h3>
