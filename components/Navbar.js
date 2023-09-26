@@ -110,40 +110,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 <li className="py-4 text-sm cursor-pointer">Contact</li>
               </Link>
             </ul>
-            <div className="my-[4rem]">
-              <p className="uppercase tracking-widest text-teal-600 dark:text-teal-400">
-                Let's Connect
-              </p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <a
-                  href="https://www.linkedin.com/in/alex-nguyen-ba80a622b/"
-                  target="_blank"
-                >
-                  <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                </a>
-
-                <a href="https://github.com/alexnguyen11" target="_blank">
-                  <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                </a>
-
-                <a href="mailto:alex.khanh.nguyen@outlook.com" target="_blank">
-                  <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                </a>
-
-                <a href="tel:4035605899" target="_blank">
-                  {" "}
-                  <div className="rounded-full shadow-lg dark:shadow-gray-950 shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <BsPhone />
-                  </div>
-                </a>
-              </div>
-            </div>
 
             <ul className="flex flex-row-reverse items-center justify-between mt-10">
               <li>
