@@ -6,7 +6,7 @@ import { useState } from "react";
 function MainLayout({ children }) {
     const [darkMode, setDarkMode] = useState(false);
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={darkMode ? "dark bg-gray-900" : ""}>
       <Head>
         <title>Alex | Software Developer</title>
         <meta

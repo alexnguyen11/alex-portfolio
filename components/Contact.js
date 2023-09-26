@@ -47,7 +47,7 @@ const Contact = () => {
                   </div>
                   <div className="md:rounded-full md:shadow-lg md:dark:shadow-gray-950 md:shadow-gray-300 md:p-6  cursor-pointer hover:scale-110 ease-in duration-300">
                     <a
-                      href="discordapp.com/users/867137784371216435"
+                      href="https://www.discordapp.com/users/867137784371216435"
                       target="_blank"
                       rel="noreferrer"
                     >

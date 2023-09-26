@@ -1,12 +1,19 @@
 import React from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState, useEffect } from "react";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { ArrowDownward, Close, ArrowCircleDown } from "@mui/icons-material";
+import {
+  Close,
+  ArrowCircleDown,
+  Menu,
+  NightsStay,
+  Brightness4,
+  LightMode,
+} from "@mui/icons-material";
 import Link from "next/link";
 import Alex_Nguyen_Resume from "@/public/Alex_Nguyen_Resume.pdf";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
+  const [navBg, setNavBg] = useState("rgb(30 41 59 / var(--tw-bg-opacity))");
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
@@ -14,7 +21,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <>
-      <div className="py-10 px-10 md:px-20 lg:px-40 flex justify-between text-gray-800 dark:text-slate-400 bg-white dark:bg-gray-900">
+      <div className="sticky top-0 py-10 px-10 md:px-20 lg:px-40  flex justify-between items-center text-gray-800 dark:text-slate-400 z-50 backdrop-filter backdrop-blur-lg bg-opacity-30 dark:bg-opacity-10 border-b border-gray-200 dark:border-gray-800">
         <Link href="/" className="cursor-pointer">
           {" "}
           <h1 className="text-xl font-burtons">alexnguyen</h1>
@@ -50,12 +57,21 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           </ul>
         </div>
         <ul className="hidden md:flex items-center">
-          <li>
-            <BsFillMoonStarsFill
-              className="cursor-pointer text-2xl"
-              onClick={() => setDarkMode(!darkMode)}
-            />
-          </li>
+          {darkMode ? (
+            <li>
+              <LightMode
+                className="cursor-pointer text-2xl"
+                onClick={() => setDarkMode(!darkMode)}
+              />
+            </li>
+          ) : (
+            <li>
+              <NightsStay
+                className="cursor-pointer text-2xl"
+                onClick={() => setDarkMode(!darkMode)}
+              />
+            </li>
+          )}
           <li>
             <a
               className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
@@ -63,13 +79,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               download="Alex_Nguyen_Resume"
             >
               Resume
-
               <ArrowCircleDown className="text-medium ml-1" />
             </a>
           </li>
         </ul>
         <div onClick={handleNav} className="md:hidden cursor-pointer">
-          <AiOutlineMenu size={25} />
+          <Menu />
         </div>
       </div>
       <div
@@ -82,7 +97,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w[45%] h-screen bg-white dark:bg-gray-900 p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w[45%] h-screen p-10 ease-in duration-500 backdrop-filter backdrop-blur-lg bg-opacity-30 dark:bg-opacity-10"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -120,15 +135,24 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </ul>
 
             <ul className="flex flex-row-reverse items-center justify-between">
-              <li>
-                <BsFillMoonStarsFill
-                  className="cursor-pointer text-2xl absolute bottom-5"
-                  onClick={() => setDarkMode(!darkMode)}
-                />
-              </li>
+              {darkMode ? (
+                <li>
+                  <LightMode
+                    className="cursor-pointer text-2xl absolute bottom-12"
+                    onClick={() => setDarkMode(!darkMode)}
+                  />
+                </li>
+              ) : (
+                <li>
+                  <NightsStay
+                    className="cursor-pointer text-2xl absolute bottom-12"
+                    onClick={() => setDarkMode(!darkMode)}
+                  />
+                </li>
+              )}
               <li className="">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-2 py-1 border-none rounded-md text-sm absolute bottom-5"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-3 py-1 border-none rounded-md text-sm absolute bottom-12"
                   href={Alex_Nguyen_Resume}
                   download="Alex_Nguyen_Resume"
                 >
