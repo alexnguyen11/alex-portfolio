@@ -1,12 +1,10 @@
 import React from "react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import {
   Close,
   ArrowCircleDown,
   Menu,
   NightsStay,
-  Brightness4,
   LightMode,
 } from "@mui/icons-material";
 import Link from "next/link";
@@ -138,21 +136,21 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               {darkMode ? (
                 <li>
                   <LightMode
-                    className="cursor-pointer text-2xl absolute bottom-12"
+                    className="cursor-pointer text-2xl absolute bottom-[4rem]"
                     onClick={() => setDarkMode(!darkMode)}
                   />
                 </li>
               ) : (
                 <li>
                   <NightsStay
-                    className="cursor-pointer text-2xl absolute bottom-12"
+                    className="cursor-pointer text-2xl absolute bottom-[4rem]"
                     onClick={() => setDarkMode(!darkMode)}
                   />
                 </li>
               )}
               <li className="">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-3 py-1 border-none rounded-md text-sm absolute bottom-12"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-3 py-1 border-none rounded-md text-sm absolute bottom-[4rem]"
                   href={Alex_Nguyen_Resume}
                   download="Alex_Nguyen_Resume"
                 >
