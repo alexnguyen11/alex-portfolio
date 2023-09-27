@@ -75,7 +75,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               href="/Alex_Nguyen_Resume.pdf"
               download="Alex_Nguyen_Resume"
             >
-              <p>Resume</p>
+              <p className="text-white">Resume</p>
 
               <ArrowCircleDown className="text-medium ml-1" />
             </a>
@@ -154,7 +154,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   href="/Alex_Nguyen_Resume.pdf"
                   download="Alex_Nguyen_Resume"
                 >
-                  <p>CV</p>
+                  <p className="text-white">CV</p>
                   <ArrowCircleDown className="text-sm ml-1" />
                 </a>
               </li>
