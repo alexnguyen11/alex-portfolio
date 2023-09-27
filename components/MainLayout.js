@@ -13,8 +13,7 @@ function MainLayout({ children }) {
           name="description"
           content="Alex Nguyen's Official Portfolio Website"
         />
-        {/** Need to change ico - lenard */}
-        <link rel="icon" href={"/logo.jpeg"} />
+        <link rel="icon" href='/logo.png' />
       </Head>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <div id="mainContainer">{children}</div>
