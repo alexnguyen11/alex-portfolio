@@ -8,7 +8,6 @@ import {
   LightMode,
 } from "@mui/icons-material";
 import Link from "next/link";
-import Alex_Nguyen_Resume from "@/public/Alex_Nguyen_Resume.pdf";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [navBg, setNavBg] = useState("rgb(30 41 59 / var(--tw-bg-opacity))");
@@ -73,7 +72,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <li>
             <a
               className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-              href={Alex_Nguyen_Resume}
+              href='/Alex_Nguyen_Resume.pdf'
               download="Alex_Nguyen_Resume"
             >
               Resume
@@ -151,7 +150,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               <li className="">
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-3 py-1 border-none rounded-md text-sm absolute bottom-[4rem]"
-                  href={Alex_Nguyen_Resume}
+                  href='/Alex_Nguyen_Resume.pdf'
                   download="Alex_Nguyen_Resume"
                 >
                   CV
