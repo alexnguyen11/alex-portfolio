@@ -35,7 +35,7 @@ const wellnesscentre = () => {
             sizes.
           </p>
           <a
-            href="https://github.com/alexnguyen11"
+            href="https://github.com/alexnguyen11/spa-clinic"
             target="_blank"
             rel="noreferrer"
           >

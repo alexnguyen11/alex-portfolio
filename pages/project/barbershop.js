@@ -38,7 +38,7 @@ const barbershop = () => {
             customers in the barber shop.
           </p>
           <a
-            href="https://github.com/alexnguyen11"
+            href="https://github.com/Romantiko-Capstone-Project/romantiko.ca"
             target="_blank"
             rel="noreferrer"
           >
