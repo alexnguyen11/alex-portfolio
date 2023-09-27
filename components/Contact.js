@@ -1,5 +1,5 @@
 import Image from "next/image";
-import contactImg from "../public/assets/contact.jpeg";
+import contactImg from "../public/assets/contact.png";
 import { BsDiscord } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { LinkedIn, AlternateEmail, PhoneIphone } from "@mui/icons-material";

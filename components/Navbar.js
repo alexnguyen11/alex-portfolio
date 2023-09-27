@@ -71,11 +71,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           )}
           <li>
             <a
-              className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-              href='/Alex_Nguyen_Resume.pdf'
+              className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white flex flex-row items-center text-center   px-4 py-2 border-none rounded-md ml-8"
+              href="/Alex_Nguyen_Resume.pdf"
               download="Alex_Nguyen_Resume"
             >
-              Resume
+              <p>Resume</p>
+
               <ArrowCircleDown className="text-medium ml-1" />
             </a>
           </li>
@@ -149,12 +150,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               )}
               <li className="">
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-3 py-1 border-none rounded-md text-sm absolute bottom-[4rem]"
-                  href='/Alex_Nguyen_Resume.pdf'
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white flex flex-row items-center text-center px-3 py-1 border-none rounded-md text-sm absolute bottom-[4rem]"
+                  href="/Alex_Nguyen_Resume.pdf"
                   download="Alex_Nguyen_Resume"
                 >
-                  CV
-                  <ArrowCircleDown className="text-base ml-1" />
+                  <p>CV</p>
+                  <ArrowCircleDown className="text-sm ml-1" />
                 </a>
               </li>
             </ul>

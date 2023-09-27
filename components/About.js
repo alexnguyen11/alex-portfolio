@@ -1,5 +1,5 @@
 import Image from "next/image";
-import contactImg from "@/public/assets/contact.png"
+import aboutImg from "@/public/assets/about.png"
 import Link from "next/link";
 
 const About = () => {
@@ -33,7 +33,7 @@ const About = () => {
           </p>
         </div>
         <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden mt-20 md:h-70 md:w-70">
-          <Image src={contactImg} layout="fill" objectFit="cover" />
+          <Image src={aboutImg} layout="fill" objectFit="cover" />
         </div>
       </div>
     </div>
