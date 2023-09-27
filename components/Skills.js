@@ -138,7 +138,7 @@ const Skills = () => {
                   <Image src={JWT} width="" height="" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3>Json Web Token</h3>
+                  <h3>JSON Web Token</h3>
                 </div>
               </div>
             </div>
