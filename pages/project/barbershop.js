@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import barbershopImg from "@/public/assets/projects/barbershop.png";
+import barbershopImg from "@/public/assets/projects/barbershop/barbershop.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { PiCaretDoubleLeftBold } from "react-icons/pi";
 import Link from "next/link";

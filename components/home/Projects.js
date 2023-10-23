@@ -1,5 +1,5 @@
-import barbershopImg from "@/public/assets/projects/barbershop.png";
-import massageImg from "@/public/assets/projects/massagetherapy.png"
+import barbershopImg from "@/public/assets/projects/barbershop/barbershop.png";
+import massageImg from "@/public/assets/projects/wellnesscentre/massagetherapy.png"
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {

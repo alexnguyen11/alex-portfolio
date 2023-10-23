@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Main from "@/components/Main";
-import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
+import Main from "@/components/home/Main";
+import About from "@/components/home/About";
+import Skills from "@/components/home/Skills";
+import Projects from "@/components/home/Projects";
+import Contact from "@/components/home/Contact";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
